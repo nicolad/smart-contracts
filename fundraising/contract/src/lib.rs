@@ -35,4 +35,9 @@ impl Contract {
     pub fn get_fundraiser(&self) -> AccountId {
         self.fundraiser.clone()
     }
+
+    #[private]
+    pub fn set_fundraiser(&mut self, new_fundraiser: AccountId) {
+        self.fundraiser = new_fundraiser;
+    }
 }
