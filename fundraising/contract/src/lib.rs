@@ -13,6 +13,10 @@ pub struct Contract {
 
 impl Default for Contract{
     fn default() -> Self{
+        Self {
+            fundraiser: "nicolad.testnet".parse().unwrap(),
+            pledges: UnorderedMap::new(b"p")
+        }
     }
 }
 
