@@ -3,12 +3,10 @@ use crate::ContractExt;
 
 use near_sdk::{AccountId, near_bindgen};
 use near_sdk::json_types::U128;
-use near_sdk::serde::Serialize;
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 
 #[near_bindgen]
 #[derive(BorshDeserialize, BorshSerialize)]
-#[serde(crate = "near_sdk::serde")]
 pub struct Pledge {
     pub account_id: AccountId,
     pub total_amount: U128
