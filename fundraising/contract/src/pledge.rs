@@ -13,3 +13,10 @@ pub struct Pledge {
     pub account_id: AccountId,
     pub total_amount: U128
 }
+
+#[near_bindgen]
+impl Contract {
+    pub fn get_number_of_pledges(&self) -> u64 {
+        self.pledges.len()        
+    }
+}

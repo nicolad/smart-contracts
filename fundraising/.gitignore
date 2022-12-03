@@ -8,6 +8,8 @@ node_modules
 # build
 /out
 /dist
+**/dist
+**/.parcel-cache
 **/target
 
 # keys
